@@ -1,0 +1,38 @@
+@media (min-width: 375px) {
+  .navbar {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    font-family: $font-family-mono;
+    font-weight: 500;
+    display: flex;
+    background-color: $background-color;
+    justify-content: flex-end;
+    visibility: visible;
+  }
+
+  .navbar-nav-item {
+    display: inline-block;
+    list-style-type: none;
+    padding: 30px 16px;
+    text-decoration: none;
+    color: $body-color;
+  }
+
+  .navbar-nav-link {
+    color: $body-color;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .navbar-nav-link span {
+    color: $header-color-two;
+  }
+
+  a:hover {
+    color: $header-color-two;
+  }
+}

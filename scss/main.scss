@@ -1,0 +1,33 @@
+//$body-color: #d3dade;
+//$background-color: #161825; Best
+@import "config";
+@import "menu";
+@import "nav";
+@import "projects";
+@import "footer";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $background-color;
+  height: 100%;
+  margin: 0;
+  font-family: $font-family-calibre;
+  //padding: 2rem;
+  color: $body-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+@import "jumbotron";
+@import "about";
+@import "skills";
+@import "experience";

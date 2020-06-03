@@ -1,0 +1,134 @@
+@media (min-width: 375px) {
+  .projects-container {
+    padding: 0px 40px 100px 40px;
+    display: block;
+  }
+  .projects-sm-heading {
+    font-size: $font-size-header-mobile;
+    font-family: $font-family-mono;
+    color: $header-color-one;
+    letter-spacing: 2px;
+    span {
+      color: $header-color-two;
+    }
+  }
+
+  .projects {
+    margin: 0;
+    width: 700px;
+  }
+
+  .project-one {
+    //width: 700px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-two {
+    margin-top: 60px;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-airchaser {
+    flex: 1;
+    h1 {
+      font-weight: 900;
+    }
+
+    h4 {
+      font-family: $font-family-mono;
+      font-weight: 400;
+      color: $header-color-two;
+    }
+    a {
+      text-decoration: none;
+      color: $body-color;
+    }
+    a:hover {
+      color: $header-color-two;
+    }
+
+    p {
+      font-size: 14px;
+      background-color: rgb(227, 227, 231);
+      padding: 25px;
+      border-radius: 5px;
+    }
+  }
+
+  .project-airchaser-image {
+    flex: 2;
+    margin-left: 20px;
+  }
+
+  .projects-skill {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    font-family: $font-family-mono;
+    font-weight: 500;
+    font-size: 15px;
+    li {
+      margin-top: 6px;
+      margin-left: 6px;
+      padding: 2px;
+      border-radius: 5px;
+    }
+  }
+
+  .project-xpower {
+    flex: 1;
+    position: relative;
+    z-index: 30;
+    h1 {
+      font-weight: 900;
+    }
+
+    h4 {
+      font-family: $font-family-mono;
+      font-weight: 400;
+      color: $header-color-two;
+    }
+    a {
+      text-decoration: none;
+      color: $body-color;
+    }
+    a:hover {
+      color: $header-color-two;
+    }
+
+    p {
+      font-size: 14px;
+      background-color: rgb(227, 227, 231);
+      padding: 25px;
+      border-radius: 5px;
+    }
+  }
+
+  .project-xpower-image {
+    flex: 2;
+    position: relative;
+    z-index: 20;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .projects-sm-heading {
+    font-size: $font-size-header-desktop;
+    width: 250px;
+  }
+}
+
+@media (min-width: 900px) {
+  .projects-container {
+    padding: 20px 50px 180px 50px;
+    display: flex;
+    justify-content: center;
+  }
+}

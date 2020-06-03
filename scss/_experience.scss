@@ -1,0 +1,45 @@
+@media (min-width: 375px) {
+  .experience-container {
+    padding: 0px 40px 100px 40px;
+    display: block;
+  }
+  .experience-sm-heading {
+    font-size: $font-size-header-mobile;
+    font-family: $font-family-mono;
+    color: $header-color-one;
+    letter-spacing: 2px;
+    span {
+      color: $header-color-two;
+    }
+  }
+  .experience-companies {
+    margin-left: 20px;
+  }
+  .experience-company {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    .experience-title {
+      font-weight: 700;
+    }
+  }
+  .experience-position {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .experience-container {
+    padding: 20px 50px 180px 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .experience-sm-heading {
+    width: 250px;
+    font-size: $font-size-header-desktop;
+  }
+  .experience-companies {
+    margin: 0;
+    width: 700px;
+  }
+}

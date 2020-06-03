@@ -1,0 +1,45 @@
+@media (min-width: 375px) {
+  .about-container {
+    padding: 0px 40px 100px 40px;
+    display: block;
+  }
+  .about-sm-heading {
+    font-size: $font-size-header-mobile;
+    font-family: $font-family-mono;
+    color: $header-color-one;
+    letter-spacing: 2px;
+    span {
+      color: $header-color-two;
+    }
+  }
+  .about-p {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    padding: 20px 50px 180px 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .about-sm-heading {
+    font-size: $font-size-header-desktop;
+    width: 180px;
+  }
+  .about-p {
+    width: 700px;
+    margin: 0;
+  }
+}
+
+/*.sm-heading-line::after {
+    content: "";
+    display: inline-block;
+    width: 10%;
+    height: 2px;
+    top: 50%;
+    background: #ffff;
+    position: absolute;
+    //right: 0;
+  }*/
