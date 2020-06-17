@@ -31,7 +31,7 @@
     font-family: "DM Mono", monospace;
     visibility: hidden;
     font-weight: 500;
-    background: #797979; }
+    background: #898b8c; }
     .menu.show {
       visibility: visible; }
     .menu .menu-nav {
@@ -97,39 +97,23 @@
     letter-spacing: 2px; }
     .projects-sm-heading span {
       color: #f39d1d; }
-  .projects {
-    margin: 0;
-    width: 700px; }
-  .project-one {
-    margin: 0;
-    display: flex;
-    justify-content: space-between; }
-  .project-two {
-    margin-top: 60px;
-    width: 700px;
-    display: flex;
-    justify-content: space-between; }
-  .project-airchaser {
-    flex: 1; }
-    .project-airchaser h1 {
-      font-weight: 900; }
-    .project-airchaser h4 {
-      font-family: "DM Mono", monospace;
-      font-weight: 400;
-      color: #f39d1d; }
-    .project-airchaser a {
-      text-decoration: none;
-      color: #2c2b2b; }
-    .project-airchaser a:hover {
-      color: #f39d1d; }
-    .project-airchaser p {
-      font-size: 14px;
-      background-color: #e3e3e7;
-      padding: 25px;
-      border-radius: 5px; }
-  .project-airchaser-image {
-    flex: 2;
-    margin-left: 20px; }
+  .project-airchaser h1 {
+    font-weight: 900; }
+  .project-airchaser h4 {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    color: #f39d1d; }
+  .project-airchaser a {
+    text-decoration: none;
+    color: #2c2b2b; }
+  .project-airchaser a:hover {
+    color: #f39d1d; }
+  .project-airchaser p {
+    font-size: 14px;
+    background-color: #e3e3e7;
+    padding: 25px;
+    border-radius: 5px;
+    width: 80%; }
   .projects-skill {
     padding: 0;
     display: flex;
@@ -144,42 +128,60 @@
       margin-left: 6px;
       padding: 2px;
       border-radius: 5px; }
-  .project-xpower {
-    flex: 1;
-    position: relative;
-    z-index: 30; }
-    .project-xpower h1 {
-      font-weight: 900; }
-    .project-xpower h4 {
-      font-family: "DM Mono", monospace;
-      font-weight: 400;
-      color: #f39d1d; }
-    .project-xpower a {
-      text-decoration: none;
-      color: #2c2b2b; }
-    .project-xpower a:hover {
-      color: #f39d1d; }
-    .project-xpower p {
-      font-size: 14px;
-      background-color: #e3e3e7;
-      padding: 25px;
-      border-radius: 5px; }
-  .project-xpower-image {
-    flex: 2;
-    position: relative;
-    z-index: 20;
-    margin-right: 20px; } }
+  .project-xpower h1 {
+    font-weight: 900; }
+  .project-xpower h4 {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    color: #f39d1d; }
+  .project-xpower a {
+    text-decoration: none;
+    color: #2c2b2b; }
+  .project-xpower a:hover {
+    color: #f39d1d; }
+  .project-xpower p {
+    font-size: 14px;
+    background-color: #e3e3e7;
+    padding: 25px;
+    border-radius: 5px; }
+  .hide-mobile {
+    display: none; }
+  .show-mobile {
+    display: block; } }
 
 @media (min-width: 768px) {
   .projects-sm-heading {
-    font-size: 20px;
-    width: 250px; } }
+    font-size: 20px; } }
 
 @media (min-width: 900px) {
   .projects-container {
     padding: 20px 50px 180px 50px;
     display: flex;
-    justify-content: center; } }
+    justify-content: center; }
+  .project-airchaser p {
+    width: 100%; }
+  .projects-sm-heading {
+    width: 250px; }
+  .projects {
+    margin: 0;
+    width: 700px; }
+  .project-one {
+    margin: 0;
+    display: flex;
+    justify-content: space-between; }
+  .project-airchaser-image {
+    margin-left: 20px; }
+  .project-two {
+    margin-top: 60px;
+    width: 700px;
+    display: flex;
+    justify-content: space-between; }
+  .project-xpower-image {
+    margin-right: 20px; }
+  .show-desktop {
+    display: block; }
+  .hide-desktop {
+    display: none; } }
 
 .footer {
   text-align: center;
@@ -203,7 +205,7 @@ a {
 
 @media (min-width: 375px) {
   .jumbotron-container {
-    padding: 0px 15px 100px 15px; }
+    padding: 0px 30px 100px 30px; }
   h1.lg-heading {
     margin: 0;
     font-size: 3rem; }
@@ -280,9 +282,11 @@ a {
       color: #f39d1d; }
   .skills {
     display: flex;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    flex-wrap: wrap; }
     .skills .skill {
-      margin-left: 20px; }
+      margin-left: 20px;
+      margin-top: 20px; }
     .skills .skill span {
       font-weight: 700; }
     .skills .skill ul {

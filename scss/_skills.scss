@@ -15,8 +15,11 @@
   .skills {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
+
     .skill {
       margin-left: 20px;
+      margin-top: 20px;
     }
     .skill span {
       font-weight: 700;

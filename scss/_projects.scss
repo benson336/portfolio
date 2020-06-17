@@ -13,27 +13,7 @@
     }
   }
 
-  .projects {
-    margin: 0;
-    width: 700px;
-  }
-
-  .project-one {
-    //width: 700px;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .project-two {
-    margin-top: 60px;
-    width: 700px;
-    display: flex;
-    justify-content: space-between;
-  }
-
   .project-airchaser {
-    flex: 1;
     h1 {
       font-weight: 900;
     }
@@ -56,12 +36,8 @@
       background-color: rgb(227, 227, 231);
       padding: 25px;
       border-radius: 5px;
+      width: 80%;
     }
-  }
-
-  .project-airchaser-image {
-    flex: 2;
-    margin-left: 20px;
   }
 
   .projects-skill {
@@ -82,9 +58,6 @@
   }
 
   .project-xpower {
-    flex: 1;
-    position: relative;
-    z-index: 30;
     h1 {
       font-weight: 900;
     }
@@ -110,18 +83,18 @@
     }
   }
 
-  .project-xpower-image {
-    flex: 2;
-    position: relative;
-    z-index: 20;
-    margin-right: 20px;
+  .hide-mobile {
+    display: none;
+  }
+
+  .show-mobile {
+    display: block;
   }
 }
 
 @media (min-width: 768px) {
   .projects-sm-heading {
     font-size: $font-size-header-desktop;
-    width: 250px;
   }
 }
 
@@ -130,5 +103,49 @@
     padding: 20px 50px 180px 50px;
     display: flex;
     justify-content: center;
+  }
+
+  .project-airchaser {
+    p {
+      width: 100%;
+    }
+  }
+
+  .projects-sm-heading {
+    width: 250px;
+  }
+
+  .projects {
+    margin: 0;
+    width: 700px;
+  }
+
+  .project-one {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-airchaser-image {
+    margin-left: 20px;
+  }
+
+  .project-two {
+    margin-top: 60px;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-xpower-image {
+    margin-right: 20px;
+  }
+
+  .show-desktop {
+    display: block;
+  }
+
+  .hide-desktop {
+    display: none;
   }
 }
