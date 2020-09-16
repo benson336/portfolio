@@ -143,7 +143,8 @@
     font-size: 14px;
     background-color: #e3e3e7;
     padding: 25px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    width: 80%; }
   .hide-mobile {
     display: none; }
   .show-mobile {
