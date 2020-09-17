@@ -1,0 +1,346 @@
+@media (min-width: 375px) {
+  .menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    visibility: visible; }
+    .menu-btn .btn-line {
+      width: 28px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background: black;
+      transition: all 0.3s ease-out; }
+    .menu-btn.close {
+      transform: rotate(180deg); }
+      .menu-btn.close .btn-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        background: black; }
+      .menu-btn.close .btn-line:nth-child(2) {
+        visibility: hidden; }
+      .menu-btn.close .btn-line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+        background: black; }
+  .menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+    font-family: "DM Mono", monospace;
+    visibility: hidden;
+    font-weight: 500;
+    background: #898b8c; }
+    .menu.show {
+      visibility: visible; }
+    .menu .menu-nav {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+      list-style: none;
+      transform: translate3d(0, -100%, 0);
+      transition: all 0.3s ease-out; }
+      .menu .menu-nav.show {
+        transform: translate3d(0, 0, 0); }
+      .menu .menu-nav .menu-nav-item {
+        padding-top: 15px;
+        font-size: 17px;
+        font-weight: 900; }
+      .menu .menu-nav .menu-nav-link {
+        color: black; }
+        .menu .menu-nav .menu-nav-link span {
+          color: #f39d1d; } }
+
+@media (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden; } }
+
+@media (min-width: 375px) {
+  .navbar {
+    visibility: hidden; } }
+
+@media (min-width: 768px) {
+  .navbar {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    display: flex;
+    background-color: #f2f4f7;
+    justify-content: flex-end;
+    visibility: visible; }
+  .navbar-nav-item {
+    display: inline-block;
+    list-style-type: none;
+    padding: 30px 16px;
+    text-decoration: none;
+    color: #2c2b2b; }
+  .navbar-nav-link {
+    color: #2c2b2b;
+    text-decoration: none;
+    font-size: 14px; }
+  .navbar-nav-link span {
+    color: #f39d1d; }
+  a:hover {
+    color: #f39d1d; } }
+
+@media (min-width: 375px) {
+  .projects-container {
+    padding: 0px 40px 100px 40px;
+    display: block; }
+  .projects-sm-heading {
+    font-size: 17px;
+    font-family: "DM Mono", monospace;
+    color: #313764;
+    letter-spacing: 2px; }
+    .projects-sm-heading span {
+      color: #f39d1d; }
+  .project-airchaser h1 {
+    font-weight: 900; }
+  .project-airchaser h4 {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    color: #f39d1d; }
+  .project-airchaser a {
+    text-decoration: none;
+    color: #2c2b2b; }
+  .project-airchaser a:hover {
+    color: #f39d1d; }
+  .project-airchaser p {
+    font-size: 14px;
+    background-color: #e3e3e7;
+    padding: 25px;
+    border-radius: 5px;
+    width: 80%; }
+  .projects-skill {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-size: 15px; }
+    .projects-skill li {
+      margin-top: 6px;
+      margin-left: 6px;
+      padding: 2px;
+      border-radius: 5px; }
+  .project-xpower h1 {
+    font-weight: 900; }
+  .project-xpower h4 {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    color: #f39d1d; }
+  .project-xpower a {
+    text-decoration: none;
+    color: #2c2b2b; }
+  .project-xpower a:hover {
+    color: #f39d1d; }
+  .project-xpower p {
+    font-size: 14px;
+    background-color: #e3e3e7;
+    padding: 25px;
+    border-radius: 5px;
+    width: 80%; }
+  .hide-mobile {
+    display: none; }
+  .show-mobile {
+    display: block; } }
+
+@media (min-width: 768px) {
+  .projects-sm-heading {
+    font-size: 20px; } }
+
+@media (min-width: 900px) {
+  .projects-container {
+    padding: 20px 50px 180px 50px;
+    display: flex;
+    justify-content: center; }
+  .project-airchaser p {
+    width: 100%; }
+  .projects-sm-heading {
+    width: 250px; }
+  .projects {
+    margin: 0;
+    width: 700px; }
+  .project-one {
+    margin: 0;
+    display: flex;
+    justify-content: space-between; }
+  .project-airchaser-image {
+    margin-left: 20px; }
+  .project-two {
+    margin-top: 60px;
+    width: 700px;
+    display: flex;
+    justify-content: space-between; }
+  .project-xpower-image {
+    margin-right: 20px; }
+  .show-desktop {
+    display: block; }
+  .hide-desktop {
+    display: none; } }
+
+.footer {
+  text-align: center;
+  font-family: "Roboto", monospace; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #f2f4f7;
+  height: 100%;
+  margin: 0;
+  font-family: "calibre", sans-serif;
+  color: #2c2b2b; }
+
+a {
+  text-decoration: none; }
+
+@media (min-width: 375px) {
+  .jumbotron-container {
+    padding: 0px 30px 100px 30px; }
+  h1.lg-heading {
+    margin: 0;
+    font-size: 3rem; }
+    h1.lg-heading span {
+      color: #313764; }
+  h2.md-heading {
+    margin: 0;
+    font-size: 2rem; }
+    h2.md-heading span {
+      color: #f39d1d; }
+  h3.sm-heading {
+    margin: 0;
+    width: 100%;
+    margin-top: 40px; }
+    h3.sm-heading .sm-heading-sub {
+      border-bottom: 3px solid #f39d1d; } }
+
+@media (min-width: 768px) {
+  .jumbotron-container {
+    padding: 50px 100px 180px 100px; }
+  h1.lg-heading {
+    font-size: 4rem; }
+  h2.md-heading {
+    font-size: 3rem; }
+  h3.sm-heading {
+    width: 60%; } }
+
+@media (min-width: 375px) {
+  .about-container {
+    padding: 0px 40px 100px 40px;
+    display: block; }
+  .about-sm-heading {
+    font-size: 17px;
+    font-family: "DM Mono", monospace;
+    color: #313764;
+    letter-spacing: 2px; }
+    .about-sm-heading span {
+      color: #f39d1d; }
+  .about-p {
+    margin-left: 20px; } }
+
+@media (min-width: 768px) {
+  .about-container {
+    padding: 20px 50px 180px 50px;
+    display: flex;
+    justify-content: center; }
+  .about-sm-heading {
+    font-size: 20px;
+    width: 180px; }
+  .about-p {
+    width: 700px;
+    margin: 0; } }
+
+/*.sm-heading-line::after {
+    content: "";
+    display: inline-block;
+    width: 10%;
+    height: 2px;
+    top: 50%;
+    background: #ffff;
+    position: absolute;
+    //right: 0;
+  }*/
+@media (min-width: 375px) {
+  .skills-container {
+    padding: 0px 40px 100px 40px;
+    display: block; }
+  .skills-sm-heading {
+    font-size: 17px;
+    font-family: "DM Mono", monospace;
+    color: #313764;
+    letter-spacing: 2px; }
+    .skills-sm-heading span {
+      color: #f39d1d; }
+  .skills {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; }
+    .skills .skill {
+      margin-left: 20px;
+      margin-top: 20px; }
+    .skills .skill span {
+      font-weight: 700; }
+    .skills .skill ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none; }
+    .skills .skill-item {
+      margin-top: 9px; } }
+
+@media (min-width: 768px) {
+  .skills-container {
+    padding: 20px 50px 180px 50px;
+    display: flex;
+    justify-content: center; }
+  .skills-sm-heading {
+    font-size: 20px;
+    width: 180px; }
+  .skills {
+    justify-content: space-between;
+    width: 700px; }
+    .skills .skill {
+      margin: 0; } }
+
+@media (min-width: 375px) {
+  .experience-container {
+    padding: 0px 40px 100px 40px;
+    display: block; }
+  .experience-sm-heading {
+    font-size: 17px;
+    font-family: "DM Mono", monospace;
+    color: #313764;
+    letter-spacing: 2px; }
+    .experience-sm-heading span {
+      color: #f39d1d; }
+  .experience-companies {
+    margin-left: 20px; }
+  .experience-company {
+    margin: 0;
+    display: flex;
+    justify-content: space-between; }
+    .experience-company .experience-title {
+      font-weight: 700; }
+  .experience-position {
+    margin-bottom: 25px; } }
+
+@media (min-width: 768px) {
+  .experience-container {
+    padding: 20px 50px 180px 50px;
+    display: flex;
+    justify-content: center; }
+  .experience-sm-heading {
+    width: 250px;
+    font-size: 20px; }
+  .experience-companies {
+    margin: 0;
+    width: 700px; } }
