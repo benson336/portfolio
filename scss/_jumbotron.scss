@@ -3,10 +3,26 @@
     padding: 0px 30px 100px 30px;
   }
 
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   h1 {
     &.lg-heading {
       margin: 0;
       font-size: 3rem;
+      //animation-delay: s;
+      /*-webkit-animation: fadeIn 5s;
+      -moz-animation: fadeIn 5s;
+      -o-animation: fadeIn 5s;
+      -ms-animation: fadeIn 5s;*/
       span {
         color: $header-color-one;
       }
@@ -16,6 +32,7 @@
     &.md-heading {
       margin: 0;
       font-size: 2rem;
+
       span {
         color: $header-color-two;
       }
@@ -35,8 +52,22 @@
 }
 
 @media (min-width: 768px) {
+  /*.animateText {
+    animation: fadeEffect 1s; 
+  }
+  @keyframes fadeEffect {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }*/
+
   .jumbotron-container {
-    padding: 50px 100px 180px 100px;
+    padding: 50px 100px 140px 100px;
   }
   h1 {
     &.lg-heading {

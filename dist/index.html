@@ -8,8 +8,11 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;900&display=swap" rel="stylesheet">
+    
 
-    <title>My Portfolio</title>
+    <title>Chaopin's Portfolio</title>
   </head>
   <body>
     <nav class="menu-btn">
@@ -27,9 +30,7 @@
           <a href="#skills" class="menu-nav-link"><span>02.</span>Skills</a>
         </li>
         <li class="menu-nav-item">
-          <a href="#experience" class="menu-nav-link"
-            ><span>03.</span>Experience</a
-          >
+          <a href="#experience" class="menu-nav-link"><span>03.</span>Experience</a>
         </li>
         <li class="menu-nav-item">
           <a href="#projects" class="menu-nav-link"><span>04.</span>Projects</a>
@@ -43,44 +44,88 @@
       </div>-->
       <div class="navbar-nav">
         <li class="navbar-nav-item">
-          <a class="navbar-nav-link" href="#about"><span>01.</span> About</a>
+          <a class="navbar-nav-link" href="#about" style="opacity: 0;
+          animation-name: fadeIn;
+          animation-delay: 100ms;
+          animation-duration:0.5s;
+          animation-fill-mode: forwards;"><span>01.</span> About</a>
         </li>
         <li class="navbar-nav-item">
-          <a class="navbar-nav-link" href="#skills"><span>02.</span> Skills</a>
+          <a class="navbar-nav-link" href="#skills" style="opacity: 0;
+          animation-name: fadeIn;
+          animation-delay: 250ms;
+          animation-duration:0.5s;
+          animation-fill-mode: forwards;"><span>02.</span> Skills</a>
         </li>
         <li class="navbar-nav-item">
-          <a class="navbar-nav-link" href="#experience"
-            ><span>03.</span> Experience</a
-          >
+          <a class="navbar-nav-link" href="#experience" style="opacity: 0;
+          animation-name: fadeIn;
+          animation-delay: 400ms;
+          animation-duration:0.5s;
+          animation-fill-mode: forwards;"><span>03.</span> Experience</a>
         </li>
         <li class="navbar-nav-item">
-          <a class="navbar-nav-link" href="#projects"
-            ><span>04.</span> Projects</a
-          >
+          <a class="navbar-nav-link" href="#projects" style="opacity: 0;
+          animation-name: fadeIn;
+          animation-delay: 550ms;
+          animation-duration:0.5s;
+          animation-fill-mode: forwards;"><span>04.</span> Projects</a>
         </li>
+        <li class="navbar-nav-item">
+          <a class="navbar-nav-link resumeButton" href="#" style="opacity: 0;
+          animation-name: fadeIn;
+          animation-delay: 700ms;
+          animation-duration:0.5s;
+          animation-fill-mode: forwards; border:1.5px solid #3c3737; padding:10px; border-radius:3px;">Resume</a>
+        </li>
+        
       </div>
     </nav>
 
     <main>
       <div class="jumbotron-container">
-        <h2 class="md-heading" style="transition-delay: 100ms;">
-          <span>Hello! I'm</span>
+        <h2 class="md-heading">
+          <span style="opacity: 0;
+          animation-name: fadeIn;
+          animation-delay: 900ms;
+          animation-duration:0.4s;
+          animation-fill-mode: forwards;">Hello! I'm</span>
         </h2>
-        <h1 class="lg-heading"><span>Chaopin Wen.</span></h1>
-        <h1 class="lg-heading">I build things for the web.</h1>
-        <h3 class="sm-heading">
+        <h1 class="lg-heading" style="opacity: 0;
+        animation-name: fadeIn;
+        animation-delay: 1s;
+        animation-duration:0.4s;
+        animation-fill-mode: forwards;"><span>Chaopin Wen.</span></h1>
+        <h1 class="lg-heading" style="opacity: 0;
+        animation-name: fadeIn;
+        animation-delay: 1.1s;
+        animation-duration:0.4s;
+        animation-fill-mode: forwards;">I build things for the web.</h1>
+        <h3 class="sm-heading" style="opacity: 0;
+        animation-name: fadeIn;
+        animation-delay: 1.2s;
+        animation-duration:0.4s;
+        animation-fill-mode: forwards;">
           I'm a design-minded, detail oriented web developer based in Anaheim, CA specializing
           in building exceptional websites and interative application. I strive to make the web
           a beautiful place.
         </h3>
-        <h3 class="sm-heading">
-          Get in touch 👉
+        <h3 class="sm-heading" style="opacity: 0;
+        animation-name: fadeIn;
+        animation-delay: 1.3s;
+        animation-duration:0.4s;
+        animation-fill-mode: forwards;">
+          Get in touch &#128073;
           <span class="sm-heading-sub">benson.wen36@gmail.com</span>
         </h3>
       </div>
     </main>
 
-    <section>
+    <section class="animateText" id="animateText" style="opacity: 0;
+    animation-name: fadeIn;
+    animation-delay: 1.4s;
+    animation-duration:0.4s;
+    animation-fill-mode: forwards;">
       <div class="about-container" id="about">
         <h1 class="about-sm-heading"><span>01.</span> ABOUT</h1>
         <p class="about-p">
@@ -94,36 +139,26 @@
       </div>
     </section>
 
-    <section>
+    <section class="animateText" id="animateText2">
       <div class="skills-container" id="skills">
         <h1 class="skills-sm-heading"><span>02.</span> SKILLS</h1>
         <div class="skills">
           <div class="skill">
             <span>LANGUAGES</span>
             <ul>
-              <li class="skill-item">Javascript(ES6)</li>
-              <li class="skill-item">HTML</li>
-              <li class="skill-item">CSS/Sass</li>
-              <li class="skill-item">PHP</li>
-              <li class="skill-item">MongoDB</li>
-              <li class="skill-item">SQL</li>
-            </ul>
-          </div>
-          <div class="skill">
-            <span>FRAMEWORKS</span>
-            <ul>
-              <li class="skill-item">ReactJS</li>
-              <li class="skill-item">NodeJS</li>
-              <li class="skill-item">ExpressJS</li>
+              <li class="skill-item">PHP/Laravel(Routing, Authentication, Access Control, Migration, Eloquent)</li>
+              <li class="skill-item">HTML5/CSS3 (Sass, Animation, Flexbox, Bootstrap)</li>
+              <li class="skill-item">Javascript (React, OOP, Ajax, Rest API, jQuery)</li>
+              <li class="skill-item">MySQL(CRUD Operations, Relationships)</li>
             </ul>
           </div>
           <div class="skill">
             <span>TOOLS</span>
             <ul>
-              <li class="skill-item">NPM</li>
-              <li class="skill-item">Wordpress</li>
               <li class="skill-item">Git & Github</li>
               <li class="skill-item">Postman</li>
+              <li class="skill-item">NPM</li>
+              <li class="skill-item">Wordpress</li>
               <li class="skill-item">Chrome DevTools</li>
             </ul>
           </div>
@@ -143,9 +178,8 @@
           <div class="experience-position">Web Developer</div>
           <div class="experience-position">
             <ul>
-              <li>Create and update web applications written in PHP, create CRUD application accessing MySQL databases.</li>
+              <li>Create and update web applications written in PHP, using CRUD operation interacting MySQL databases.</li>
               <li>Code front-end applications using industry standard HTML/CSS to form the basic architecture, structure and layout of a website and use JavaScript/jQuery to perform DOM manipulation and add dynamic functionality.</li>
-              <li>Integrate custom RESTful web services APIs with 3rd party inventory management system.</li>
               <li>Collaborate with design and development leads to create full websites and applications from scratch. Turning PSD file into fully functional e-commerce website. Responsive Web Design across all devices.</li>
               <li>Customize website via Prestashop, WordPress WooCommerce platform. Design and implement new features and functionality. Ensure high-performance and availability and manage all technical aspects of the CMS.</li>
             </ul>
@@ -162,9 +196,9 @@
               <li>Provide on-site VLSI hardware schematic review/demonstration with customers. Perform hardware analysis and interact with engineering development teams to provide solutions to complex issues.</li>
             </ul>
           </div>
-          <div class="experience-company" style="margin-top:70px;">
-            <div class="experience-title">👉View My Resume<iframe src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/benson336/portfolio/master/pdf/ChaopinWenResume.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe></div>
-          </div>
+          <!--<div class="experience-company" style="margin-top:70px;">
+            <div class="experience-title">&#128073; View My Resume<iframe src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/benson336/portfolio/master/pdf/ChaopinWenResume.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe></div>
+          </div>-->
         </div>
       </div>
     </section>
@@ -173,41 +207,43 @@
       <div class="projects-container" id="projects">
         <h1 class="projects-sm-heading"><span>04.</span> PROJECTS</h1>
         <div class="projects">
+
+
           <div class="project-one">
             <div class="project-airchaser">
               <h4>Featured Project</h4>
-              <a href="https://airchaser.com" target="_blank">
-                <h1>Airchaser.com</h1>
+              <a href="https://catchondesign.com" target="_blank">
+                <h1 class="w3-center w3-animate-top" style="font-family: 'Noto Sans TC', sans-serif;">Catchondesign.com</h1>
               </a>
-              <p>
-                An eCommerce website received about 12k of traffic per month.
-                Fully customized from front-end layout to back-end
-                functionality. Responsive and mobile friendly design. User can
-                register, login, search, add to cart and check out products.
+              <p class="merge">
+                A Full Stack website built with Laravel. Users can register, login, create, update, delete project, and perform live search via third party API from the backend.  
               </p>
-              <ul class="projects-skill">
-                <li>HTML/CSS</li>
+              <ul class="projects-skill" style="justify-content: flex-start;">
                 <li>PHP</li>
+                <li>Laravel</li>
+                <li>Unsplash API</li>
                 <li>Javascript</li>
                 <li>MySQL</li>
               </ul>
             </div>
             <div class="project-airchaser-image hide-mobile show-desktop">
-              <img src="https://raw.githubusercontent.com/benson336/portfolio/master/img/airchaser.jpg" width="auto" height="500" />
+              <img src="https://raw.githubusercontent.com/benson336/portfolio/master/img/catchondesign.jpg" width="auto" height="500" style="border-radius:2%; box-shadow: 10px 5px 5px #9ba99b;"/>
+              <div class="overlay"></div>
             </div>
             <div class="project-airchaser-image show-mobile hide-desktop">
-              <img src="https://raw.githubusercontent.com/benson336/portfolio/master/img/airchaser.jpg" width="300" height="auto" />
+              <img src="https://raw.githubusercontent.com/benson336/portfolio/master/img/catchondesign.jpg" width="300" height="auto" style="border-radius:2%; box-shadow: 10px 5px 5px #9ba99b;"/>
             </div>
           </div>
 
           <div class="project-two">
             <div class="project-xpower-image hide-mobile show-desktop">
-              <img src="https://raw.githubusercontent.com/benson336/portfolio/master/img/xpower.jpg" width="auto" height="500" />
+              <img src="https://raw.githubusercontent.com/benson336/portfolio/master/img/xpower.jpg" width="auto" height="500" style="border-radius:2%; box-shadow: 10px 5px 5px #9ca7c3;"/>
+              <div class="overlay"></div>
             </div>
             <div class="project-xpower">
               <h4>Featured Project</h4>
               <a href="https://xpower.com" target="_blank">
-                <h1>Xpower.com</h1>
+                <h1 style="font-family: 'Noto Sans TC', sans-serif;">XPOWER.com</h1>
               </a>
               <p>
                 A front-end focus, presentational enterprise website. Working in
@@ -222,9 +258,38 @@
               </ul>
             </div>
             <div class="project-xpower-image show-mobile hide-desktop">
-              <img src="https://raw.githubusercontent.com/benson336/portfolio/master/img/xpower.jpg" width="300" height="auto" />
+              <img src="https://raw.githubusercontent.com/benson336/portfolio/master/img/xpower.jpg" width="300" height="auto" style="border-radius:2%; box-shadow: 10px 5px 5px #9ca7c3;"/>
             </div>
           </div>
+
+          <div class="project-two">
+            <div class="project-airchaser">
+              <h4>Featured Project</h4>
+              <a href="https://airchaser.com" target="_blank">
+                <h1 style="font-family: 'Noto Sans TC', sans-serif;">AIRCHASER.com</h1>
+              </a>
+              <p style="font-family: 'Noto Sans TC', sans-serif;">
+                An eCommerce website received about 12k of traffic per month.
+                Fully customized from front-end layout to back-end
+                functionality. Responsive and mobile friendly design. User can
+                register, login, search, add to cart and check out products.
+              </p>
+              <ul class="projects-skill" style="justify-content: flex-start;">
+                <li>HTML/CSS</li>
+                <li>PHP</li>
+                <li>Javascript</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <div class="project-airchaser-image hide-mobile show-desktop">
+              <img src="https://raw.githubusercontent.com/benson336/portfolio/master/img/airchaser.jpg" width="auto" height="500" style="border-radius:2%; box-shadow: 10px 5px 5px #c7b4b4;"/>
+              <div class="overlay"></div>
+            </div>
+            <div class="project-airchaser-image show-mobile hide-desktop">
+              <img src="https://raw.githubusercontent.com/benson336/portfolio/master/img/airchaser.jpg" width="300" height="auto" style="border-radius:2%; box-shadow: 10px 5px 5px #c7b4b4;"/>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -233,5 +298,20 @@
         <p>Built By Chaopin Wen</p>
       </div>
     </footer>
+
+
+    <!--<script>
+    window.addEventListener("scroll", function() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        document.getElementById("animateText").style.display = "block";
+    } else if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        document.getElementById("animateText2").style.display = "block";
+    }
+    else {
+        document.getElementById("animateText").style.display = "none";
+        document.getElementById("animateText2").style.display = "none";
+    }
+ });
+    </script>-->
   </body>
 </html>

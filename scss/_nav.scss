@@ -26,6 +26,11 @@
     color: $body-color;
     text-decoration: none;
     font-size: 14px;
+
+    &.resumeButton:hover {
+      background-color: #d8a45533;
+      color: black;
+    }
   }
 
   .navbar-nav-link span {

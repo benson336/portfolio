@@ -16,12 +16,14 @@
   .project-airchaser {
     h1 {
       font-weight: 900;
+      margin: 0;
     }
 
     h4 {
       font-family: $font-family-mono;
       font-weight: 400;
       color: $header-color-two;
+      margin: 30px 0px 0px 0px;
     }
     a {
       text-decoration: none;
@@ -32,8 +34,10 @@
     }
 
     p {
+      font-family: "Noto Sans TC", sans-serif;
+      font-weight: 400;
       font-size: 14px;
-      background-color: rgb(227, 227, 231);
+      background-color: #d3d5daed;
       padding: 25px;
       border-radius: 5px;
       width: 80%;
@@ -48,7 +52,7 @@
     list-style: none;
     font-family: $font-family-mono;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 13px;
     li {
       margin-top: 6px;
       margin-left: 6px;
@@ -60,12 +64,14 @@
   .project-xpower {
     h1 {
       font-weight: 900;
+      margin: 0;
     }
 
     h4 {
       font-family: $font-family-mono;
       font-weight: 400;
       color: $header-color-two;
+      margin: 30px 0px 0px 0px;
     }
     a {
       text-decoration: none;
@@ -76,14 +82,15 @@
     }
 
     p {
+      font-family: "Noto Sans TC", sans-serif;
+      font-weight: 400;
       font-size: 14px;
-      background-color: rgb(227, 227, 231);
+      background-color: #d3d5daed;
       padding: 25px;
       border-radius: 5px;
-      width: 80%;ff
+      width: 80%;
     }
   }
-
   .hide-mobile {
     display: none;
   }
@@ -99,26 +106,34 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
   .projects-container {
     padding: 20px 50px 180px 50px;
     display: flex;
     justify-content: center;
   }
 
-  .project-airchaser {
-    p {
-      width: 100%;
-    }
-  }
-
   .projects-sm-heading {
     width: 250px;
   }
 
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    transition: 0.5s ease;
+    background-color: #cacdd26b;
+    border-radius: 2%;
+  }
+
   .projects {
     margin: 0;
-    width: 700px;
+    width: 950px;
   }
 
   .project-one {
@@ -129,17 +144,50 @@
 
   .project-airchaser-image {
     margin-left: 20px;
+    position: relative;
+    border-radius: 10%;
+  }
+
+  .project-airchaser-image:hover .overlay {
+    opacity: 0;
+  }
+
+  .project-airchaser {
+    z-index: 1;
+    p {
+      width: 120%;
+    }
+  }
+
+  .projects-skill {
+    justify-content: flex-end;
   }
 
   .project-two {
     margin-top: 60px;
-    width: 700px;
     display: flex;
     justify-content: space-between;
   }
 
+  .project-xpower {
+    z-index: 1;
+    text-align: right;
+    p {
+      width: 130%;
+      position: relative;
+      right: 100px;
+      padding-left: 20px;
+    }
+  }
+
   .project-xpower-image {
     margin-right: 20px;
+    position: relative;
+    border-radius: 10%;
+  }
+
+  .project-xpower-image:hover .overlay {
+    opacity: 0;
   }
 
   .show-desktop {
