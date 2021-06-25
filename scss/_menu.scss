@@ -7,6 +7,7 @@
     cursor: pointer;
     @include easeOut;
     visibility: visible;
+    z-index: 25;
 
     .btn-line {
       width: 28px;
@@ -44,7 +45,8 @@
     font-family: $font-family-mono;
     visibility: hidden;
     font-weight: 500;
-    background: #898b8c;
+    background: #9fa1a1;
+    z-index: 20;
     &.show {
       visibility: visible;
     }
@@ -70,7 +72,8 @@
         font-weight: 900;
       }
       .menu-nav-link {
-        color: black;
+        color: rgb(26, 25, 25);
+        z-index: 20;
         span {
           color: $header-color-two;
         }
