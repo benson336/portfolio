@@ -28,11 +28,11 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.92;
     font-family: "DM Mono", monospace;
     visibility: hidden;
     font-weight: 500;
-    background: #9fa1a1;
+    background: black;
     z-index: 20; }
     .menu.show {
       visibility: visible; }
@@ -53,7 +53,7 @@
         font-size: 17px;
         font-weight: 900; }
       .menu .menu-nav .menu-nav-link {
-        color: #1a1919;
+        color: #e4e3e3;
         z-index: 20; }
         .menu .menu-nav .menu-nav-link span {
           color: #f39d1d; } }

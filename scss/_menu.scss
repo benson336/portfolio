@@ -41,19 +41,11 @@
     position: fixed;
     top: 0;
     width: 100%;
-<<<<<<< HEAD
-    opacity: 0.9;
-    font-family: $font-family-mono;
-    visibility: hidden;
-    font-weight: 500;
-    background: #9fa1a1;
-=======
     opacity: 0.92;
     font-family: $font-family-mono;
     visibility: hidden;
     font-weight: 500;
     background: black;
->>>>>>> 308f88a (09_17_22 update)
     z-index: 20;
     &.show {
       visibility: visible;
@@ -80,11 +72,7 @@
         font-weight: 900;
       }
       .menu-nav-link {
-<<<<<<< HEAD
-        color: rgb(26, 25, 25);
-=======
         color: rgb(228, 227, 227);
->>>>>>> 308f88a (09_17_22 update)
         z-index: 20;
         span {
           color: $header-color-two;
